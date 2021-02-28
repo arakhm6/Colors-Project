@@ -60,6 +60,7 @@ input[type='range']{
     position: relative;
     border-radius: 1rem;
     cursor: pointer;
+    outline: none;
 }
 
 .sliders.active{
@@ -80,6 +81,7 @@ input[type='range']{
     color: white;
     cursor: pointer;
     font-weight: bold;
+    outline: none;
 }
 
 .panel{
@@ -98,6 +100,7 @@ input[type='range']{
     color: white;
     cursor: pointer;
     border-radius: 1rem;
+    outline: none;
 }
 
 .panel p{
@@ -121,6 +124,7 @@ input[type='range']{
 .lock{
     font-size: 2rem;
     border: none;
+    outline: none;
     background: none;
     cursor: pointer;
     margin: 2rem 0rem;
