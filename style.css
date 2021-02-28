@@ -43,13 +43,13 @@ svg{
     position: absolute;
     bottom: 0%;
     background: white;
-    /* opacity: 0; */
+    opacity: 0;
     padding: 1rem;
     width: 80%;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    /* pointer-events: none; */
-    /* transform: translateY(100px); */
+    pointer-events: none;
+    transform: translateY(100px);
     transition: all 0.5s ease-in-out;
 }
 
@@ -138,6 +138,7 @@ input[type='range']{
     align-items: center;
     opacity: 0;
     pointer-events: none;
+    transition: all 0.5s ease-in-out;
 }
 
 .copy-popup{
