@@ -157,7 +157,7 @@ input[type='range']{
     flex-direction: column;
     justify-content: ce;
     align-items: center;
-    border-radius: 2rem;
+    border-radius: 1rem;
     transform: translateY(-2rem);
     min-width: 30%;
     min-height: 30vh;
@@ -193,13 +193,13 @@ input[type='range']{
 }
 
 .close-save{
-    border-top-right-radius: 7rem;
+    border-top-right-radius: 1rem;
     border-bottom-left-radius: 7rem;
     padding: 0.5rem;
 }
 
 .close-library{
-    border-top-right-radius: 7rem;
+    border-top-right-radius: 1rem;
     border-bottom-left-radius: 7rem;
     padding: 0.5rem;
 }
@@ -218,7 +218,7 @@ input[type='range']{
     min-width: 40%;
     padding: 1rem;
     justify-content: flex-start;
-    overflow-y:auto;
+    overflow-y: auto;
     max-height: 50vh;
 }
 
