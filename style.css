@@ -212,6 +212,7 @@ input[type='range']{
     border-radius: 10px;
     color: white;
     cursor: pointer;
+    outline: none;
 }
 
 .library-popup{

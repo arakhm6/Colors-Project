@@ -273,7 +273,17 @@ function savePalette(e)
             colors.push(hex.innerText);
         });
         
-    let paletteNum = savedPalettes.length;
+    let paletteNum;
+    const paletteObjects = JSON.parse(localStorage.getItem('palettes'));
+    if(paletteObjects)
+    {
+        paletteNum = paletteObjects.length;
+    }
+    else
+    {
+        paletteNum = savedPalettes.length;
+    }
+
     const paletteObj = 
     {
         name,
@@ -356,13 +366,14 @@ function closeLibrary()
 
 function getLocal()
 {
-    if(localStorage.getItem('palette') === null)
+    if(localStorage.getItem('palettes') === null)
     {
         localPalettes = [];
     }
     else
     {
         const paletteObjects = JSON.parse(localStorage.getItem('palettes'));
+        savedPalettes = [...paletteObjects];
         paletteObjects.forEach(paletteObj =>
             {
                 const palette = document.createElement('div');
