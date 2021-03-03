@@ -301,6 +301,23 @@ function savePalette(e)
     paletteButton.classList.add('pick-palette-button')
     paletteButton.classList.add(paletteObj.number);
     paletteButton.innerText = "Select";
+
+    //Attach event to the button
+    paletteButton.addEventListener('click', e =>
+    {
+        closeLibrary();
+        const paletteIndex = e.target.classList[1];
+        initialColors = [];
+        savedPalettes[paletteIndex].colors.forEach((color, index) =>
+        {
+            initialColors.push(color);
+            colorDivs[index].style.backgroundColor = color;
+            const text = colorDivs[index].children[0];
+            checkTextContrast(color, text);
+            updateTextUI(index);
+        });
+        libraryInputUpdate();
+    });
     
     //Append to library
     palette.appendChild(title);
@@ -335,6 +352,11 @@ function closeLibrary()
     const popup = libraryContainer.children[0];
     libraryContainer.classList.remove('active');
     popup.classList.remove('active');
+}
+
+libraryInputUpdate()
+{
+    
 }
 
 randomColors();

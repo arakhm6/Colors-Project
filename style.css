@@ -199,7 +199,7 @@ input[type='range']{
 }
 
 .close-library{
-    border-top-right-radius: 1rem;
+    border-top-right-radius: 7rem;
     border-bottom-left-radius: 7rem;
     padding: 0.5rem;
 }
@@ -215,10 +215,10 @@ input[type='range']{
 }
 
 .library-popup{
-    min-width: 405;
+    min-width: 40%;
     padding: 1rem;
     justify-content: flex-start;
-    overflow-y: scroll;
+    overflow-y:auto;
     max-height: 50vh;
 }
 
